@@ -1,4 +1,4 @@
-# animarender-vue
+# Animarender Test
 
 ## Project setup
 ```
