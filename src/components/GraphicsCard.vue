@@ -170,6 +170,10 @@
 <style lang="scss" scoped>
   @import '~@/assets/scss/mixins.scss';
 
+  .card:not(:first-child) {
+    padding: 0 21px 21px 21px
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -177,12 +181,11 @@
     min-height: 109px;
     background-color: #F7F8FC;
     border-radius: 4px;
-    padding: 21px 21px;
+    padding: 21px;
 
     &__title {
       font-weight: 500;
       line-height: 20px;
-      margin-bottom: 14px;
     }
 
     &__inputs {
@@ -193,7 +196,7 @@
     &__input {
       display: flex;
       flex-direction: column;
-      margin-right: 24px;
+      margin: 15px 24px 0 0;
     }
 
     .input__title {
@@ -301,7 +304,7 @@
       }
 
       &__input {
-        margin: 0 0 15px 0;
+        margin: 15px 0 0 0;
       }
 
       &__remove {
