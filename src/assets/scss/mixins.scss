@@ -1,0 +1,23 @@
+@mixin input-mixin($width: 156px) {
+  width: $width;
+  height: 45px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 13px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  color: #A7ABC3;
+
+  &::placeholder {
+    color: #A7ABC3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+  }
+}
